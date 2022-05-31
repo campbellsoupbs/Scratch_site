@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.box-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.colorbox {
+  width: 400px;
+  height: 400px;
+  background-color: rgb(179, 177, 177);  
+}
