@@ -46,6 +46,70 @@
          </ul>
         </div>
        </div>
+
+       <div>
+
+    <svg width="120" height="100" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="triangles" clip-path="url(#clip0_2_2)">
+            <g id="lightGroup">
+                <path id="light1" opacity="0.7" d="M36 48.2679C37.3333 49.0377 37.3333 50.9623 36 51.7321L10.5 66.4545C9.16667 67.2243 7.5 66.262 7.5 64.7224L7.5 35.2776C7.5 33.738 9.16667 32.7757 10.5 33.5455L36 48.2679Z"/>
+            </g>
+            <g id="darkGroup">
+                <path id="dark1" opacity="0.7" d="M46 48.2679C47.3333 49.0377 47.3333 50.9623 46 51.7321L20.5 66.4545C19.1667 67.2243 17.5 66.262 17.5 64.7224L17.5 35.2776C17.5 33.738 19.1667 32.7757 20.5 33.5455L46 48.2679Z"/>
+                <path id="dark2" opacity="0.7" d="M36 48.2679C37.3333 49.0377 37.3333 50.9623 36 51.7321L10.5 66.4545C9.16667 67.2243 7.5 66.262 7.5 64.7224L7.5 35.2776C7.5 33.738 9.16667 32.7757 10.5 33.5455L36 48.2679Z"/>
+            </g>
+        </g>
+    <defs>
+    <clipPath id="clip0_2_2">
+    <rect width="120" height="100" fill="white"/>
+    </clipPath>
+    </defs>
+    </svg>
+    
+<style>
+    :root {
+        --dark-color: #635bff;
+        --light-color: #80e9ff;
+    }
+
+    svg {
+        cursor: pointer;
+    }
+
+    #darkGroup {
+        fill: var(--dark-color);
+    }
+
+    #lightGroup {
+        fill: var(--light-color);
+    }
+
+    #dark1,
+    #light1,
+    #dark2 {
+        transition: all 1s ease;
+    }
+
+    #dark2 {
+        transform: translateX(-100%);
+    }
+
+    svg:hover #light1 {
+        transform: translateX(20%);
+    }
+
+    svg:hover #dark1 {
+        transform: translateX(40%);
+        opacity: 0;
+    }
+    svg:hover #dark2 {
+        transform: translateX(8%);
+    }
+
+</style>
+
+
+       </div>
     
 </body>
 </html>
